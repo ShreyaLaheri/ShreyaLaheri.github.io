@@ -1,20 +1,26 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import Logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white text-gray shadow-md">
+    <nav className="bg-white text-gray shadow-md fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <NavLink to="/" className="text-2xl font-bold text-primary">
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              className="text-2xl font-bold text-primary cursor-pointer"
+            >
               <img src={Logo} alt="logo" />
-            </NavLink>
+            </Link>
           </div>
+
           {/* Hamburger Menu (Mobile) */}
           <div className="md:hidden">
             <button
@@ -46,67 +52,68 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
+
           {/* Navigation Links */}
           <div
             className={`${
               isOpen ? "block" : "hidden"
             } md:flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0 absolute md:relative bg-white md:bg-transparent w-full md:w-auto left-0 top-16 md:top-0 z-10 md:z-auto shadow-md md:shadow-none p-4 md:p-0`}
           >
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-primary font-bold block px-4 py-2 text-lg"
-                  : "text-gray-dark hover:text-primary block px-4 py-2 text-lg"
-              }
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              spy={true}
+              activeClass="text-primary font-semibold"
+              className="text-gray-dark hover:text-primary block px-4 py-2 text-lg cursor-pointer"
               onClick={() => setIsOpen(false)}
             >
               HOME
-            </NavLink>
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-primary font-bold block px-4 py-2 text-lg"
-                  : "text-gray-dark hover:text-primary block px-4 py-2 text-lg"
-              }
+            </Link>
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              spy={true}
+              activeClass="text-primary font-semibold"
+              className="text-gray-dark hover:text-primary block px-4 py-2 text-lg cursor-pointer"
               onClick={() => setIsOpen(false)}
             >
               ABOUT
-            </NavLink>
-            <NavLink
-              to="/resume"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-primary font-bold block px-4 py-2 text-lg"
-                  : "text-gray-dark hover:text-primary block px-4 py-2 text-lg"
-              }
+            </Link>
+            <Link
+              to="resume"
+              smooth={true}
+              duration={500}
+              spy={true}
+              activeClass="text-primary font-semibold"
+              className="text-gray-dark hover:text-primary block px-4 py-2 text-lg cursor-pointer"
               onClick={() => setIsOpen(false)}
             >
               RESUME
-            </NavLink>
-            <NavLink
-              to="/projects"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-primary font-bold block px-4 py-2 text-lg"
-                  : "text-gray-dark hover:text-primary block px-4 py-2 text-lg"
-              }
+            </Link>
+            <Link
+              to="projects"
+              smooth={true}
+              duration={500}
+              spy={true}
+              activeClass="text-primary font-semibold"
+              className="text-gray-dark hover:text-primary block px-4 py-2 text-lg cursor-pointer"
               onClick={() => setIsOpen(false)}
             >
               PROJECTS
-            </NavLink>
-            <NavLink
-              to="/contact"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-primary font-bold block px-4 py-2 text-lg"
-                  : "text-gray-dark hover:text-primary block px-4 py-2 text-lg"
-              }
+            </Link>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              spy={true}
+              activeClass="text-primary font-semibold"
+              className="text-gray-dark hover:text-primary block px-4 py-2 text-lg cursor-pointer"
               onClick={() => setIsOpen(false)}
             >
               CONTACT
-            </NavLink>
+            </Link>
           </div>
         </div>
       </div>

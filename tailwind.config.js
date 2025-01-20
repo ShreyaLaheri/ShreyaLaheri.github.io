@@ -12,9 +12,15 @@ module.exports = {
       fontFamily: {
         sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
       },
+      fontSize: {
+        sm: ['0.875rem', '1.25rem'], 
+        base: ['0.95rem', '1.5rem'],
+        lg: ['1.125rem', '1.75rem'], 
+        xl: ['1.25rem', '1.75rem'], 
+      },
       colors: {
         transparent: 'transparent',
-        current: 'currentColor',
+        current: 'currentColor',  
         primary: "#B07B35",
         gray: {
           lightest: '#EEEEEE',
@@ -24,6 +30,9 @@ module.exports = {
           darkest: '#3C3B3B',
         },
       },
+      borderWidth: {
+       '20': '20px',
+      }
     }
   },
   plugins: [],

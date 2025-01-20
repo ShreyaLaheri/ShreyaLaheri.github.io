@@ -1,23 +1,32 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from './pages/Home/Home'
-import About from './pages/About/About'
-import Resume from './pages/Resume/Resume'
-import Projects from './pages/Projects/Projects'
-import Contact from './pages/Contact/Contact'
+import { BrowserRouter as Router } from "react-router-dom";
+import Home from './pages/Home';
+import About from './pages/About';
+import Resume from './pages/Resume';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
 const App = () => {
   return (
     <div className="bg-gray-lightest min-h-screen">
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
+      <Router>
+        {/* Sections */}
+        <div id="home" className="min-h-screen flex items-center justify-center bg-white mb-8 lg:mb-16">
+          <Home />
+        </div>
+        <div id="about" className="min-h-screen flex items-center justify-center mb-8 lg:mb-16">
+          <About />
+        </div>
+        <div id="resume" className="min-h-screen flex items-center justify-center mb-8 lg:mb-24">
+          <Resume />
+        </div>
+        <div id="projects" className="min-h-screen flex items-center justify-center mb-8 lg:mb-12">
+          <Projects />
+        </div>
+        <div id="contact" className="min-h-screen flex items-center justify-center">
+          <Contact />
+        </div>
+      </Router>
     </div>
   );
 };
