@@ -1,7 +1,30 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Navbar from "../components/Navbar";
+import Typed from "typed.js";
 
 const Contact = () => {
+  const typedElement = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(typedElement.current, {
+      strings: [
+        "Looking for a passionate software developer? Let’s connect!",
+        "Exploring opportunities in web and software development – let’s collaborate!",
+        "Networking makes the world smaller – let’s meet!",
+        "Let’s talk code, innovation, and everything in between!",
+        "Freelance projects? Job opportunities? I’m here for it all!",
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      backDelay: 1500,
+      loop: true,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <div className="bg-gray-lightest w-5/6" id="contact">
       <Navbar />
@@ -13,6 +36,11 @@ const Contact = () => {
           </h2>
         </div>
 
+        {/* Typed.js Section */}
+        <div className="text-center mb-6">
+          <span ref={typedElement} className="text-lg font-medium text-primary"></span>
+        </div>
+
         {/* Contact Info */}
         <div className="text-center">
           <p className="text-gray-600 mb-4">
@@ -20,7 +48,7 @@ const Contact = () => {
           </p>
           <a
             href="mailto:sl3798@drexel.edu"
-            className="text-lg font-medium text-primary hover:underline"
+            className="text-md font-medium text-gray-900 hover:underline"
           >
             sl3798@drexel.edu
           </a>
@@ -81,7 +109,7 @@ const Contact = () => {
 
           {/* Instagram */}
           <a
-            href="https://www.instagram.com/shreya-laheri/"
+            href="https://www.instagram.com/shreya_laheri?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
             aria-label="Instagram"
             className="text-black hover:text-primary"
           >
