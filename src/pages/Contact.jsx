@@ -26,7 +26,7 @@ const Contact = () => {
 
   return (
     <div className="bg-gray-lightest w-5/6" id="contact">
-      <div className="container mx-auto bg-white rounded-lg shadow-md p-8 mt-12">
+      <div className="container mx-auto bg-white rounded-lg shadow-md p-8">
         {/* Title */}
         <div className="border-b pb-4 mb-6 text-center">
           <h2 className="text-2xl font-bold uppercase text-gray-800 tracking-wide">

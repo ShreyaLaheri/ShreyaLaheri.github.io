@@ -13,10 +13,10 @@ const App = () => {
       <Router>
         <Navbar/>
         {/* Sections */}
-        <div id="home" className="min-h-screen flex items-center justify-center bg-white mb-8 lg:mb-16">
+        <div id="home" className="min-h-screen flex items-center justify-center bg-white mb-16 lg:mb-22">
           <Home />
         </div>
-        <div id="about" className="min-h-screen flex items-center justify-center mb-8 lg:mb-16">
+        <div id="about" className="min-h-screen flex items-center justify-center mb-16 lg:mb-22">
           <About />
         </div>
         <div id="resume" className="min-h-screen flex items-center justify-center mb-8 lg:mb-24">

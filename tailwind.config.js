@@ -29,6 +29,15 @@ module.exports = {
           dark: '#616161',
           darkest: '#3C3B3B',
         },
+        red:{
+          DEFAULT: '#EF4444'
+        },
+        yellow:{
+          DEFAULT: '#FACC15'
+        },
+        green:{
+          DEFAULT: '#10B981'
+        },
       },
       borderWidth: {
        '20': '20px',

@@ -3,7 +3,7 @@ import Profile from "../assets/profile.png";
 
 const Home = () => {
   return (
-    <div class="flex flex-col" id="home">
+    <div class="flex flex-col mt-6 lg:mt-8" id="home">
       <div class="flex flex-col md:flex-row items-center justify-center md:space-x-6 space-y-6 md:space-y-0 p-4">
         {/* <!-- Image Section --> */}
         {/* <div class="relative w-full md:w-auto md:basis-1/2 flex justify-center"> */}
@@ -18,7 +18,7 @@ const Home = () => {
             />
           </div> */}
         {/* </div> */}
-        <div class="lg: mx-12">
+        <div class="lg: mx-10">
           <img
                 src={Profile}
                 alt="Profile"
@@ -27,7 +27,7 @@ const Home = () => {
         </div>
 
         {/* <!-- Text Section --> */}
-        <div class="w-full md:w-1/2 text-left flex flex-col justify-center p-3 lg:pl-20">
+        <div class="w-full md:w-1/2 text-left flex flex-col justify-center p-3 lg:pl-10">
           <h2 class="text-3xl font-bold mb-4">Hello, I'm Shreya Laheri</h2>
           <p class="text-gray-600 mb-2">
             I am a results-driven <strong>Software Development Engineer</strong> with a keen focus on solving complex problems and building impactful digital experiences. Armed with a <strong>Master’s in Computer Science</strong> from Drexel University and a strong foundation in software engineering principles, I thrive at the intersection of innovation and functionality.

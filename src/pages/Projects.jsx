@@ -44,13 +44,13 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="bg-gray-lightest mx-4 lg:mx-12" id="projects">
+    <div className="bg-gray-lightest mx-4 lg:mx-16" id="projects">
       <div> 
         <header className="text-center mb-12">
           <h1 className="text-3xl font-bold tracking-wide uppercase text-gray-800">P r o j e c t s</h1>
         </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto pb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -60,7 +60,7 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full object-cover"
+                className="w-full h-80 object-cover"
               />
 
               {/* Project Content */}
