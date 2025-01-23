@@ -8,15 +8,15 @@ const About = () => {
       {/* <header className="text-center mb-12">
           <h1 className="text-3xl font-bold tracking-wide text-primary">About Me</h1>
       </header> */}
-      <div class="text-black">
+      <div class="text-black sm:p-6">
         <div class="bg-white rounded-md ">
           {/* <!-- Header Section --> */}
           <div class="bg-gray items-center p-4 relative rounded-t-md">
             {/* <!-- Dots (Similar to Traffic Lights) --> */}
             <div class="flex space-x-2 absolute left-4">
-              <span class="w-4 h-4 bg-red-500 rounded-full"></span>
-              <span class="w-4 h-4 bg-yellow-500 rounded-full"></span>
-              <span class="w-4 h-4 bg-green-500 rounded-full"></span>
+              <span class="w-4 h-4 sm:w-3 sm:h-3 bg-red-500 rounded-full"></span>
+              <span class="w-4 h-4 sm:w-3 sm:h-3 bg-yellow-500 rounded-full"></span>
+              <span class="w-4 h-4 sm:w-3 sm:h-3 bg-green-500 rounded-full"></span>
             </div>
             {/* <!-- Executing File --> */}
             <div class="flex-grow text-center">

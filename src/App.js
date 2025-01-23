@@ -5,11 +5,13 @@ import About from './pages/About';
 import Resume from './pages/Resume';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import Navbar from './components/Navbar';
 
 const App = () => {
   return (
     <div className="bg-gray-lightest min-h-screen">
       <Router>
+        <Navbar/>
         {/* Sections */}
         <div id="home" className="min-h-screen flex items-center justify-center bg-white mb-8 lg:mb-16">
           <Home />

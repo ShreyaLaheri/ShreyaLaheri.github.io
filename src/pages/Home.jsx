@@ -1,5 +1,5 @@
 import React from "react";
-import Profile from "../assets/profile2.png";
+import Profile from "../assets/profile.png";
 
 const Home = () => {
   return (
@@ -18,35 +18,33 @@ const Home = () => {
             />
           </div> */}
         {/* </div> */}
-        <div>
+        <div class="lg: mx-12">
           <img
                 src={Profile}
                 alt="Profile"
-                class="w-auto h-auto sm:h-64 md:h-64 lg:h-72 xl:h-[28rem] shadow-md"
+                class="w-auto max-h-100 h-auto sm:h-64 md:h-64 lg:h-72 xl:h-[28rem] shadow-lg rounded mt-8 mb-8"
               />
         </div>
 
         {/* <!-- Text Section --> */}
-        <div class="w-full md:w-1/2 text-left flex flex-col justify-center md:pr-8 lg:pr-24 pl-20">
-          <h2 class="text-3xl font-bold mb-4">Hi, I am Shreya Laheri</h2>
+        <div class="w-full md:w-1/2 text-left flex flex-col justify-center p-3 lg:pl-20">
+          <h2 class="text-3xl font-bold mb-4">Hello, I'm Shreya Laheri</h2>
           <p class="text-gray-600 mb-2">
-            Software Development Engineer(SDE) who recently graduated with a <strong>MS in Computer Science</strong> from Drexel University.
+            I am a results-driven <strong>Software Development Engineer</strong> with a keen focus on solving complex problems and building impactful digital experiences. Armed with a <strong>Master’s in Computer Science</strong> from Drexel University and a strong foundation in software engineering principles, I thrive at the intersection of innovation and functionality.
           </p>
           <p class="text-gray-600 mb-2">
-            Demonstrated experience in the IT industry for over 1+ years as a Software Developer with strong skills in Web Development and Software Development.
-          </p>
-          <p class="text-gray-600 mb-2">
-            I'm highly skilled in <strong>Python</strong>, <strong>Java</strong>, and <strong>React.js</strong>.
+            My professional journey spans <strong>software development, web development, and full-stack engineering</strong>, where I’ve developed robust applications and streamlined workflows that drive efficiency. I specialize in <strong>Python</strong>, <strong>Java</strong>, and <strong>React.js</strong>, leveraging these tools to create solutions that are not only technically sound but also user-centric.
           </p>
           <p class="text-gray-600">
-            You can find my <strong>projects</strong> and the <strong>tools</strong> that I have worked with in the past.
+            Explore my portfolio to see how I combine technical expertise with creative problem-solving. Let’s build something extraordinary together!
           </p>
+
 
           {/**Social Icons */ }
           <div className="flex space-x-8 mt-8">
             {/* LinkedIn */}
             <a
-              href="https://www.linkedin.com/shreya-laheri"
+              href="http://www.linkedin.com/in/shreya-laheri/"
               aria-label="LinkedIn"
               className="text-black hover:text-primary"
             >

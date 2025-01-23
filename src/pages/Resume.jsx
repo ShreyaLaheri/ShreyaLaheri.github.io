@@ -3,7 +3,7 @@ import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 
 const Resume = () => {
   return (
-    <div className="bg-white p-6 w-5/6 rounded-md" id="resume">
+    <div className="bg-white p-6 mx-4 lg:mx-12 rounded-md" id="resume">
       {/* Header */}
       <header className="mb-8">
         <div className="flex justify-center">

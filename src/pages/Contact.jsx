@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from "react";
-import Navbar from "../components/Navbar";
 import Typed from "typed.js";
 
 const Contact = () => {
@@ -14,8 +13,8 @@ const Contact = () => {
         "Let’s talk code, innovation, and everything in between!",
         "Freelance projects? Job opportunities? I’m here for it all!",
       ],
-      typeSpeed: 50,
-      backSpeed: 30,
+      typeSpeed: 40,
+      backSpeed: 50,
       backDelay: 1500,
       loop: true,
     });
@@ -27,7 +26,6 @@ const Contact = () => {
 
   return (
     <div className="bg-gray-lightest w-5/6" id="contact">
-      <Navbar />
       <div className="container mx-auto bg-white rounded-lg shadow-md p-8 mt-12">
         {/* Title */}
         <div className="border-b pb-4 mb-6 text-center">
@@ -58,7 +56,7 @@ const Contact = () => {
         <div className="flex justify-center space-x-8 mt-8">
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/shreya-laheri"
+            href="http://www.linkedin.com/shreya-laheri"
             aria-label="LinkedIn"
             className="text-black hover:text-primary"
           >
@@ -109,7 +107,7 @@ const Contact = () => {
 
           {/* Instagram */}
           <a
-            href="https://www.instagram.com/shreya_laheri?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            href="http://www.instagram.com/shreya_laheri?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
             aria-label="Instagram"
             className="text-black hover:text-primary"
           >

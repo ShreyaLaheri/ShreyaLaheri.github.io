@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo4.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white text-gray shadow-md fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6">
-        <div className="flex justify-between h-16 items-center">
+        <div className="flex justify-between h-14 items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link
@@ -17,7 +17,7 @@ const Navbar = () => {
               duration={500}
               className="text-2xl font-bold text-primary cursor-pointer"
             >
-              <img src={Logo} alt="logo" />
+              <img src={Logo} alt="logo" class="h-12"/>
             </Link>
           </div>
 
