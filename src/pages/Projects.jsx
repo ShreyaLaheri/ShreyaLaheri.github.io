@@ -60,7 +60,7 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-80 object-cover"
+                className="w-full max-h-82 object-cover sm:object-contain"
               />
 
               {/* Project Content */}

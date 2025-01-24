@@ -6,6 +6,7 @@ import Resume from './pages/Resume';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
+import ScrollToTopButton from './components/ScrollToTopButton'; 
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <div id="contact" className="min-h-screen flex items-center justify-center">
           <Contact />
         </div>
+        <ScrollToTopButton />
       </Router>
     </div>
   );

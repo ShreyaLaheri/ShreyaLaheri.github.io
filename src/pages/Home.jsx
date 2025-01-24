@@ -27,7 +27,7 @@ const Home = () => {
         </div>
 
         {/* <!-- Text Section --> */}
-        <div class="w-full md:w-1/2 text-left flex flex-col justify-center p-3 lg:pl-10">
+        <div class="w-full md:w-1/2 sm:text-center md:text-left flex flex-col justify-center p-3 lg:pl-10">
           <h2 class="text-3xl font-bold mb-4">Hello, I'm Shreya Laheri</h2>
           <p class="text-gray-600 mb-2">
             I am a results-driven <strong>Software Development Engineer</strong> with a keen focus on solving complex problems and building impactful digital experiences. Armed with a <strong>Master’s in Computer Science</strong> from Drexel University and a strong foundation in software engineering principles, I thrive at the intersection of innovation and functionality.
