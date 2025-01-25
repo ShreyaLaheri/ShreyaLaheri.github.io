@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 
 const About = () => {
   const [isTyping, setIsTyping] = useState(false);
   const [lines, setLines] = useState([]);
   const [currentLine, setCurrentLine] = useState(0);
 
-  const content = [
+  // Memoizing the content array to avoid it being a dependency in the useEffect hook
+  const content = useMemo(() => [
     { command: "self.currentLocation()", output: `"San Jose, California, USA"` },
     {
       command: "self.experience()",
@@ -21,13 +22,13 @@ const About = () => {
     },
     {
       command: "self.skills()",
-      output: `["Python", "Java", "JavaScript", "React", "C", "C++" "Docker", "RESTful APIs", "SQL", "git"]`,
+      output: `["Python", "Java", "JavaScript", "React", "C", "C++", "Docker", "RESTful APIs", "SQL", "git"]`,
     },
     {
       command: "self.contactMe()",
       output: `<a href="https://www.linkedin.com/in/shreya-laheri" class="text-primary" target="_blank" rel="noopener noreferrer">LinkedIn</a>, <a href="https://github.com/ShreyaLaheri" class="text-primary" target="_blank" rel="noopener noreferrer">GitHub</a>, <a href="mailto:sl3798@drexel.edu" class="text-primary" target="_blank" rel="noopener noreferrer">Email</a>`,
     },
-  ];
+  ], []);
 
   const handleTapToSeeAll = (e) => {
     if (e.key === "Enter" || !isTyping) {
@@ -43,8 +44,7 @@ const About = () => {
       }, 1000);
       return () => clearTimeout(timer);
     }
-  }, [isTyping, currentLine, content]);
-
+  }, [isTyping, currentLine, content]); 
   return (
     <div
       tabIndex={0}
