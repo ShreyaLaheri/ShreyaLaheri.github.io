@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
+import Shreya_Resume from '../assets/resume.pdf'
 
 const Resume = () => {
   useEffect(() => {
@@ -41,8 +42,8 @@ const Resume = () => {
         <div className="flex justify-center items-center">
           <h1 className="text-3xl font-bold tracking-wide uppercase text-primary">R  e  s  u  m  e</h1>
           <a
-            href="/path-to-resume.pdf" 
-            download="Resume.pdf"
+            href={Shreya_Resume} 
+            download="Shreya_Resume.pdf"
             className="ml-4 text-gray-500 hover:text-black flex "
             title="Download Resume"
           >
