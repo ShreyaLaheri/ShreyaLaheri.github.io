@@ -45,10 +45,10 @@ const Contact = () => {
             Feel free to get in touch. You can email me at:
           </p>
           <a
-            href="mailto:sl3798@drexel.edu"
+            href="mailto:shreyalaheri67@gmail.com"
             className="text-md font-medium text-gray-900 hover:underline"
           >
-            sl3798@drexel.edu
+            shreyalaheri67@gmail.com
           </a>
         </div>
 
@@ -88,7 +88,7 @@ const Contact = () => {
 
           {/* Email */}
           <a
-            href="mailto:sl3798@drexel.edu"
+            href="mailto:shreyalaheri67@gmail.com"
             aria-label="Email"
             className="text-black hover:text-primary"
           >

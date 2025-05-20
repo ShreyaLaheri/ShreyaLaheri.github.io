@@ -74,48 +74,43 @@ const Resume = () => {
           <h2 className="text-xl font-bold mb-4 border-b border-gray-300 pb-2">Experience</h2>
           <div className="space-y-8">
             <div>
-              <h3 className="text-lg font-semibold">One Community Global - Software Developer</h3>
-              <p className="text-gray-500 text-sm">October 2024 - Present</p>
+              <h3 className="text-lg font-semibold">Fidelity Investments - Full Stack Developer</h3>
+              <p className="text-gray-500 text-sm">June 2024 - Present</p>
               <ul className="list-disc list-inside text-gray-600 mt-2 space-y-1">
-                <li>Led the successful implementation of Phase 3 by analyzing project requirements, mapping them to features, and collaborating with the UI/UX
-                team to design and deploy user‑friendly interfaces on GitHub, accelerating the project timeline by 15%</li>
-                <li>Reviewed and tested 50+ pull requests, identifying and resolving critical bugs to reduce defects by 10%, while maintaining code quality through
-                adherence to TDD and SOLID principles</li>
+                <li>Led the design and development of secure, highly interactive web applications using React.js, Node.js, and Flask, significantly improving user retention by 25% and reducing page load times by 37%, resulting in a more seamless user experience across platforms.</li>
+                <li>Developed and optimized scalable RESTful APIs that streamlined communication between microservices, leading to decrease in service response time, enhancing overall system efficiency and ensuring consistency in user data.</li>
+                <li>Utilized AWS services (EC2, S3, and Lambda) to automate infrastructure provisioning, reducing manual deployment time, while improving system scalability and reliability, particularly during peak usage.</li>
+                <li>Designed and implemented intuitive, responsive, and accessible UI components using Tailwind CSS, improving user engagement on mobile devices by 32% and ensuring an optimized experience across different screen sizes.</li>
+                <li>Built and maintained a robust CI/CD pipeline using GitHub Actions, enabling automated deployments and supporting bi-weekly releases with minimal rollbacks, reducing manual effort and speeding up delivery cycles.</li>
+                <li>Enhanced database performance by optimizing complex SQL queries and restructuring data access patterns in MySQL and MongoDB, leading to a 42% improvement in query speed and ensuring smoother interaction with real-time data.</li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold">Drexel University - Technical Specialist</h3>
-              <p className="text-gray-500 text-sm">March 2023 - Present</p>
+              <h3 className="text-lg font-semibold">Ernst & Young - Front-End Developer</h3>
+              <p className="text-gray-500 text-sm">June 2021 - July 2022</p>
               <ul className="list-disc list-inside text-gray-600 mt-2 space-y-1">
-                <li>Implemented a Smartsheet‑based conflict‑of‑interest management system, improving data integrity by 30%, boosting efficiency by 50%, and
-                reducing review time by 50%, with enhanced security and compliance through encryption and role‑based access controls</li>
-                <li>Contributed to the technical evaluation of COEUS replacement options, analyzing API integration and scalability, and driving the adoption of a
-                modern research management software to replace a 15‑year‑old system, setting new benchmarks for efficiency and innovation</li>
-                <li>Designed and deployed automated tools to streamline IRB protocol review, reducing processing time by 20% while ensuring consistent ethical
-                standards and regulatory compliance</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold">Ernst & Young - SAP Analyst</h3>
-              <p className="text-gray-500 text-sm">March 2022 - July 2022</p>
-              <ul className="list-disc list-inside text-gray-600 mt-2 space-y-1">
-                <li>Designed and optimized datasets in SAP Analytics Cloud (SAC) by cleansing, validating, and transforming raw data into accurate and reliable formats, leading to a 30% improvement in reporting efficiency and data usability</li>
-                <li>Developed interactive dashboards and story reports by identifying and implementing key performance indicators (KPIs), enabling stakeholders to access real-time business insights and make informed decisions with greater confidence</li>
-                <li>Automated data pipelines and seamlessly integrated multiple data sources into SAC, reducing data processing time by 25% and enhancing the overall functionality and performance of the analytics platform</li>
+                <li>Developed dynamic and user-centric web interfaces using React.js, JavaScript, HTML, and CSS, which increased internal tool efficiency by 18%, reducing time spent on repetitive tasks and improving overall team productivity.</li>
+                <li>Collaborated closely with the UI/UX design team to translate Figma designs into functional, responsive layouts, maintaining a design-to-development match rate of 94%, and earning high praise from stakeholders for the clean, user-friendly interfaces.</li>
+                <li>Integrated AJAX to enable real-time data fetching, improving user experience by providing instant updates without page reloads, leading to a 24% reduction in bounce rates and improved session durations.</li>
+                <li>Implemented Material UI to build consistent, reusable components that matched design guidelines, making the UI development process smoother and more efficient.</li>
+                <li>Leveraged GitLab for version control and CI/CD integration, automating testing and deployments to ensure smooth code collaboration and consistent staging-to-production pipelines.</li>
+                <li>Actively worked on performance optimization initiatives, identifying and addressing front-end bottlenecks, reducing page load times and improving first contentful paint (FCP) by 1.5 seconds, resulting in a faster, more fluid experience for users.</li>
+                <li>Actively participated in Agile sprint cycles, ensuring clear communication with cross-functional teams and contributing to timely delivery of user stories, leading to a 23% increase in sprint success rates and higher client satisfaction.</li>
               </ul>
             </div>
 
             <div className="pb-10">
               <h3 className="text-lg font-semibold">Space Up Technology - Web Developer</h3>
-              <p className="text-gray-500 text-sm">December 2017 - August 2019</p>
+              <p className="text-gray-500 text-sm">July 2020 - May 2021</p>
               <ul className="list-disc list-inside text-gray-600 mt-2 space-y-1">
-                <li>Boosted user engagement by 30% by crafting and implementing a responsive website UI/UX with React.js, significantly reducing bounce rates</li>
-                <li>Partnered with backend developers on GitLab to create the front‑end for Space Cloud, a Kubernetes‑based serverless platform enabling real‑time
-                API creation on multiple databases</li>
-                <li>Mentored 3 junior developers, enhancing their front‑end skills through tailored feedback and targeted tasks</li>
-                <li>Optimized SEO strategies across the blog platform, increasing organic search traffic by 60% and enhancing interaction with educational content</li>
+                <li>Developed and optimized front-end features using React.js, which enhanced user engagement and significantly improved the overall user experience across the platform.</li>
+                <li>Contributed to the design and development of Space Cloud, a Kubernetes-based serverless platform, which allowed clients to easily create real-time APIs, streamlining the process and improving the platform’s scalability.</li>
+                <li>Mentored three junior developers, enhancing their front-end skills and contributing to a 24% increase in team productivity, as measured through project timelines and performance metrics.</li>
+                <li>Led the optimization of SEO strategies across the blog platform, resulting in increase in organic search traffic and a notable improvement in user engagement and visibility.</li>
+                <li>Designed and implemented responsive, mobile-friendly interfaces with React.js and Bootstrap, resulting in a 27% increase in user engagement and a 34% reduction in bounce rates, as measured through Google Analytics.</li>
+                <li>Integrated RESTful APIs and GraphQL to facilitate smooth communication between the front-end and back-end systems, optimizing data flow and improving performance, ultimately leading to faster load times and a better user experience.</li>
+                <li>Streamlined development and deployment processes by implementing Docker, which reduced deployment times by 37% and ensured consistent and reliable environments for both development and production releases.</li>
               </ul>
             </div>
           </div>

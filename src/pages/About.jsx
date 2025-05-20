@@ -7,18 +7,18 @@ const About = () => {
 
   // Memoizing the content array to avoid it being a dependency in the useEffect hook
   const content = useMemo(() => [
-    { command: "self.currentLocation()", output: `"San Jose, California, USA"` },
+    { command: "self.currentLocation()", output: `"Boston, MA, USA"` },
     {
       command: "self.experience()",
-      output: `["One Community Global - Software Developer", "Drexel University - Technical Specialist"]`,
+      output: `["Fidelity Investments - Full Stack Developer"]`,
     },
     {
       command: "self.interests()",
-      output: `["Software Development", "Front-end Development", "Full-stack Development"]`,
+      output: `["Software Development", "Full-stack Development", "Front-end Development", "Web Development"]`,
     },
     {
       command: "self.education()",
-      output: `["MS in Computer Science - Drexel University", "BE in Computer Science - K. J. Somaiya College of Engineering"]`,
+      output: `["MS in Computer Science - Drexel University", "BTech in Computer Science - K. J. Somaiya College of Engineering"]`,
     },
     {
       command: "self.skills()",
@@ -26,7 +26,7 @@ const About = () => {
     },
     {
       command: "self.contactMe()",
-      output: `<a href="https://www.linkedin.com/in/shreya-laheri" class="text-primary" target="_blank" rel="noopener noreferrer">LinkedIn</a>, <a href="https://github.com/ShreyaLaheri" class="text-primary" target="_blank" rel="noopener noreferrer">GitHub</a>, <a href="mailto:sl3798@drexel.edu" class="text-primary" target="_blank" rel="noopener noreferrer">Email</a>`,
+      output: `<a href="https://www.linkedin.com/in/shreya-laheri" class="text-primary" target="_blank" rel="noopener noreferrer">LinkedIn</a>, <a href="https://github.com/ShreyaLaheri" class="text-primary" target="_blank" rel="noopener noreferrer">GitHub</a>, <a href="mailto:shreyalaheri67@gmail.com" class="text-primary" target="_blank" rel="noopener noreferrer">Email</a>`,
     },
   ], []);
 

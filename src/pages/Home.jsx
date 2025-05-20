@@ -76,7 +76,7 @@ const Home = () => {
 
             {/* Email */}
             <a
-              href="mailto:sl3798@drexel.edu"
+              href="mailto:shreyalaheri67@gmail.com"
               aria-label="Email"
               className="text-black hover:text-primary"
             >
